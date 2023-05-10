@@ -1,0 +1,14 @@
+Baixar projeto
+	git clone [url do repositório no GitHub] - Faça o clone do projeto do GitHub em sua máquina
+Criar repositório e incluir ao repositório remoto
+	git init - Iniciar o repositório
+	git add . - Adicionar os arquivos
+	git commit -m "Primeiro commit" - Efetivar as alterações, comentando quais alterações foram realizadas nesta nova versão
+	git remote add origin [endereço do repositório GitHub obtido no item 1] - Configure no projeto local o endereço do servidor do repositório no GitHub
+	git remote -v - Confira se o endereço do repositório do GitHub está correto no projeto local
+	git status - Retorna o resultado dos comandos acima, se está ocorrendo ou não como o esperado
+	git push -u origin master - Fazer upload das novas alterações, caso não exista, inserções para o repositório remoto.
+Atualizar o repositório local
+	*Com o repositório local já criado, basta ir na pasta onde ele se encontra, abra o gita bash e digite o código abaixo:
+		git pull origin master - Puxar as atualizações da branch master do repositório remoto de origem
+	

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Escolher Tipo</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+	<div class="container">
+		<h1 class="text-center">Escolha uma opção de contrato</h1>
+	</div>
+	<div class="mx-auto" style="width: 200px;">
+	<a class="btn btn-primary" data-toggle="collapse" href="#notebook" role="button" aria-expanded="false" aria-controls="collapseExample">
+	Notebook
+	</a>
+	<button class="btn btn-info" type="button" data-toggle="collapse" data-target="#celular" aria-expanded="false" aria-controls="collapseExample">
+	Celular
+	</button>
+	</div>
+	<div class="container collapse" id="notebook">
+		<div class="card card-body bg-primary text-white">
+			<form action="gerar.php" method="post">
+			<div class="form-row">
+				<div class="form-check">
+					<input type="checkbox" class="form-check-input" name="clinica" id="checkClinica">
+					<label for="checkClinica" class="form-check-label">Clínica</label>
+				</div>
+			</div>
+		  	<div class="form-row">
+			    <div class="form-group col-md-6">
+			      	<label for="inputNome">Nome</label>
+			      	<input type="text" class="form-control" placeholder="Informe o primeiro nome" name="nome" id="inputNome">
+			    </div>
+			    <div class="form-group col-md-6">
+			      	<label for="inputSobrenome">Sobrenome</label>
+			      	<input type="text" class="form-control" placeholder="Informe o sobrenome" name="sobrenome" id="inputSobrenome">
+			    </div>
+		  	</div>
+		  	<div class="form-row">
+				<div class="form-group col-md-4">
+					<label for="rg">RG</label>
+					<input type="text" class="form-control" placeholder="11.222.333-3" name="rg" id="rg">
+				</div>
+				<div class="form-group col-md-2">
+					<label for="ssp">SSP</label>
+					<select class="form-control" name="sspEst" id="ssp">
+						<option value="" selected>Escolhe o Estado oi-------</option>
+						<option value="SSP/MG">MG</option>
+						<option value="SSP/ES">ES</option>
+						<option value="OUTROS">OUTROS</option>
+					</select>
+				</div>
+				<div class="form-group col-md-2">
+					<input type="text" class="form-control" id="mg" name="ssp" placeholder="12.345.678">
+					<input type="text" class="form-control" id="es" name="ssp" placeholder="1.234.567">
+					<input type="text" class="form-control" id="outro" name="ssp" placeholder="Informe o valor do documento formatado">
+				</div>
+				<div class="form-group col-md-4">
+					<label for="cpf">CPF</label>
+					<input type="text" class="form-control" placeholder="123.456.789-00" name="cpf" id="cpf">
+				</div>
+			</div>
+		  	<div class="form-row">
+			    <div class="form-group col-md-4">
+			      	<label for="inputMarcaModelo">Marca e Modelo</label>
+			      	<input type="text" class="form-control" name="marcmodel" id="inputMarcaModelo">
+			    </div>
+			    <div class="form-group col-md-2">
+			      	<label for="inputIDModelo">ID Modelo</label>
+			      	<input type="text" class="form-control" name="modelo" id="inputIDModelo">
+			    </div>
+			    <div class="form-group col-md-6">
+			      	<label for="inputNSerie">Nº Serie</label>
+			      	<input type="text" class="form-control" name="serie" id="inputNSerie">
+			    </div>
+		    </div>
+		    <div class="form-row">
+			    <div class="form-group col-md-2">
+			      	<label for="inputPAT">PAT</label>
+			      	<input type="text" class="form-control" name="pat" id="inputPAT">
+			    </div>
+			  	<div class="form-group col-md-4">
+			  		<label for="inputData">Data de Entrega</label>
+			  		<input type="date" class="form-control" name="data" id="inputData">
+			  	</div>
+		  	</div>
+  				<button type="submit" class="btn btn-success btn-lg btn-block">Gerar!</button>
+			</form>
+		</div>
+		  
+
+	</div>
+	<div class="container collapse" id="celular">
+		<div class="card card-body bg-info text-white">
+			<form action="gerarCelular.php" method="post">
+		  	<div class="form-row">
+			    <div class="form-group col-md-6">
+			      	<label for="inputNome2">Nome</label>
+			      	<input type="text" class="form-control" placeholder="Informe o primeiro nome" name="nome" id="inputNome2">
+			    </div>
+			    <div class="form-group col-md-6">
+			      	<label for="inputSobrenome2">Sobrenome</label>
+			      	<input type="text" class="form-control" placeholder="Informe o sobrenome" name="sobrenome" id="inputSobrenome2">
+			    </div>
+		  	</div>
+		  	<div class="form-row">
+				<div class="form-group col-md-6">
+					<label for="rg2">RG</label>
+					<input type="text" class="form-control" placeholder="11.222.333-3" name="rg" id="rg2">
+				</div>
+				<div class="form-group col-md-6">
+					<label for="cpf2">CPF</label>
+					<input type="text" class="form-control" placeholder="123.456.789-00" name="cpf" id="cpf2">
+				</div>
+			</div>
+		  	<div class="form-row">
+			    <div class="form-group col-md-4">
+			      	<label for="inputMarcaModelo2">Marca e Modelo</label>
+			      	<input type="text" class="form-control" name="marcmodel" id="inputMarcaModelo2">
+			    </div>
+			    <div class="form-group col-md-2">
+			      	<label for="inputIDModelo2">ID Modelo</label>
+			      	<input type="text" class="form-control" name="modelo" id="inputIDModelo2">
+			    </div>
+			    <div class="form-group col-md-6">
+			      	<label for="inputNSerie2">S/N</label>
+			      	<input type="text" class="form-control" name="serie" id="inputNSerie2">
+			    </div>
+		    </div>
+		    <div class="form-row">
+			    <div class="form-group col-md-8">
+			      	<label for="inputIMEI">IMEI</label>
+			      	<input type="text" class="form-control" name="imei" id="inputIMEI">
+			    </div>
+			    <div class="form-group col-md-2">
+			      	<label for="inputPAT2">PAT</label>
+			      	<input type="text" class="form-control" name="pat" id="inputPAT2">
+			    </div>
+			    <div class="form-group col-md-2">
+			      	<label for="inputTEL">N° Celular</label>
+			      	<input type="text" class="form-control" placeholder="(21) 91234-5678" name="tel" id="inputTEL">
+			    </div>
+		    </div>
+		  	<div class="form-row">
+			    <div class="form-group col-md-2">
+			      	<label for="inputPDados">Plano de Dados</label>
+					<select id="inputPDados" class="form-control" name="pDados">
+						<option selected value="10GB">10GB</option>
+					</select>
+			    </div>
+			    <div class="form-group col-md-6">
+			      	<label for="inputPVoz">Pacote de Voz</label>
+					<select id="inputPVoz" class="form-control" name="pVoz">
+						<option selected value="Ilimitado móvel e fixo utilizando o prefixo 15">Ilimitado móvel e fixo utilizando o prefixo 15</option>
+					</select>
+			    </div>
+			  	<div class="form-group col-md-4">
+			  		<label for="inputData2">Data de Entrega</label>
+			  		<input type="date" class="form-control" name="data" id="inputData2">
+			  	</div>
+		    </div>
+			<button type="submit" class="btn btn-success btn-lg btn-block">Gerar!</button>
+			</form>
+		</div>
+	</div>
+	
+
+	<footer class="bg-dark p-2 m-2" style="border-radius: 25px;">
+		<p class="text-center text-white m-0">Autor: Filipe Almeida</p>
+	</footer>
+
+ 	<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script
+  	src="https://code.jquery.com/jquery-3.6.3.js"
+ 	integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+  	crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#cpf").mask("999.999.999-99");
+			$("#rg").mask("99.999.999-9");
+			$("#cpf2").mask("999.999.999-99");
+			$("#rg2").mask("99.999.999-9");
+			$("#mg").mask("99.999.999");
+			$("#es").mask("9.999.999");
+			$("#inputTEL").mask("(99)99999-9999");
+			document.getElementById("es").setAttribute("type", "hidden");
+			document.getElementById("mg").setAttribute("type", "hidden");
+			document.getElementById("outro").setAttribute("type", "hidden");
+			$('#ssp').change(function(){
+				var tipo = $("#ssp option:selected").text();
+				if (tipo == 'MG') {
+					document.getElementById("mg").disabled = false;
+					document.getElementById("mg").setAttribute("type", "text");
+					document.getElementById("es").setAttribute("type", "hidden");
+					document.getElementById("outro").setAttribute("type", "hidden");
+					document.getElementById("es").disabled = true;
+					document.getElementById("outro").disabled = true;
+				}else if (tipo == 'ES') {
+					document.getElementById("es").disabled = false;
+					document.getElementById("es").setAttribute("type", "text");
+					document.getElementById("mg").setAttribute("type", "hidden");
+					document.getElementById("outro").setAttribute("type", "hidden");
+					document.getElementById("mg").disabled = true;
+					document.getElementById("outro").disabled = true;
+				}else if (tipo == 'OUTROS'){
+					document.getElementById("outro").disabled = false;
+					document.getElementById("outro").setAttribute("type", "text");
+					document.getElementById("es").setAttribute("type", "hidden");
+					document.getElementById("mg").setAttribute("type", "hidden");
+					document.getElementById("es").disabled = true;
+					document.getElementById("mg").disabled = true;
+				}
+			});
+		});
+	</script>
+</body>
+</html>
