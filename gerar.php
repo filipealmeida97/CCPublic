@@ -80,7 +80,7 @@ if(isset($_POST['clinica']) && $_POST['clinica']!=''){
             margin: 0;
         }
         .p-data{
-            text-align: center; 
+            text-align: center;
         }
         .ass {
             margin: 7.6em;
