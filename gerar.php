@@ -104,7 +104,7 @@ if(isset($_POST['clinica']) && $_POST['clinica']!=''){
     <body>
         <h2>CONTRATO DE COMODATO</h2>
         <div class="content">
-            <p>Por este instrumento particular, as <strong>Partes</strong>, de um lado, <strong>LEVE SAÚDE CLÍNICA MÉDICA LTDA.</strong>, inscrita no CNPJ sob o número 29.112. 790/0001-89, com sede na Rua Engenheiro Enaldo Cravo Peixoto, n°. 215, Loja B – Tijuca, Rio de Janeiro, RJ, doravante denominada <strong>COMODANTE</strong>, e do outro '.$_POST['nome'].' '.$_POST['sobrenome'].', portador (a) do de identidade nº. '.$documento.' e CPF nº '.$_POST['cpf'].', doravante denominado (a) <strong>COMODATÁRIO (A).</strong></p>
+            <p>Por este instrumento particular, as <strong>Partes</strong>, de um lado, <strong>XXXXXXXXXXXXXXXXX LTDA.</strong>, inscrita no CNPJ sob o número YY.YYY. YYY/YYYY-ZZ, com sede na Rua Lorem ipsum dolor sit amet, n°. SSS, BRAZIL, doravante denominada <strong>COMODANTE</strong>, e do outro '.$_POST['nome'].' '.$_POST['sobrenome'].', portador (a) do de identidade nº. '.$documento.' e CPF nº '.$_POST['cpf'].', doravante denominado (a) <strong>COMODATÁRIO (A).</strong></p>
             <ul>
             <li><p>Considerando que o (a) <strong>COMODATÁRIO (A)</strong> é colaborador (a) da empresa <strong>COMODANTE;</strong></p></li>
             <li><p>Considerando que para viabilização do contrato acima referido a <strong>COMODANTE</strong> adquiriu Notebook e acessórios, resolvem celebrar o presente contrato, mediante as seguintes cláusulas e condições, que deverá ser observada e cumprida integralmente pelas partes.</p></li>
@@ -141,8 +141,8 @@ if(isset($_POST['clinica']) && $_POST['clinica']!=''){
             <p>A tolerância por parte da <strong>COMODANTE</strong> ao descumprimento das obrigações contratuais pelo (a) <strong>COMODATÁRIO(A)</strong>, não importará renúncia ou novação dos direitos e não afetará o subsequente exercício de tal direito.</p>
             <h3><strong><u>CLÁUSULA OITAVA – DO USO ESPECÍFICO PARA O EXERCÍCIO DE SUAS FUNÇÕES</u></strong></h3>
             <p>O (A) <strong>COMODATÁRIO (A)</strong> tem conhecimento que o Notebook ora cedido é para uso exclusivo no exercício de suas funções, concordando que todas as despesas relativas aos danos causados ao equipamento, decorrentes da má utilização, poderão ser cobradas em sua integralidade.</p>
-            <p>O (A) <strong>COMODATÁRIO (A)</strong> só deverá transportar o Notebook, para ambiente externo à Leve, quando demandado pelo seu gestor imediato, mediante solicitação expressa;</p>
-            <p>Nas ocasiões em que o (a) <strong>COMODATÁRIO (A)</strong> desejar transportar o Notebook, para ambiente externo à Leve, sem demanda para a Leve, assume total responsabilidade sobre o bem comodatado.</p>
+            <p>O (A) <strong>COMODATÁRIO (A)</strong> só deverá transportar o Notebook, para ambiente externo à LOREM, quando demandado pelo seu gestor imediato, mediante solicitação expressa;</p>
+            <p>Nas ocasiões em que o (a) <strong>COMODATÁRIO (A)</strong> desejar transportar o Notebook, para ambiente externo à LOREM, sem demanda para a LOREM, assume total responsabilidade sobre o bem comodatado.</p>
             <p><u>Parágrafo Único</u> – O Notebook será de uso exclusivo do (a) COMODATÁRIO (A), não devendo ceder a qualquer outra pessoa, ainda que familiar.</p>
             <h3><strong><u>CLÁUSULA NONA - DISPOSIÇÕES GERAIS</u></strong></h3>
             <p>O (A) <strong>COMODATÁRIO(A)</strong> reconhece e concorda que não se aplica o disposto no artigo 581 do Código Civil Brasileiro (L10.406/2002), tendo a <strong>COMODANTE</strong> a discricionariedade de rescindir este Contrato a qualquer momento.</p>
@@ -154,7 +154,7 @@ if(isset($_POST['clinica']) && $_POST['clinica']!=''){
             <p class="p-data">Rio de Janeiro, '.$data[8].$data[9].' de '.$meses[$data[5].$data[6]].' de '.$data[0].$data[1].$data[2].$data[3].'.</p>
         </div>
         <div class="ass">
-            <p>LEVE SAÚDE OPERADORA DE PLANOS DE SAÚDE S.A.</br>COMODANTE</p>
+            <p>LOREM IPSUM DOLOR, CONSECTETUR ADIPISCING ELIT.</br>COMODANTE</p>
         </div>
         <div class="ass">
             <p>COMODATÁRIO (A)</p>
@@ -167,7 +167,7 @@ if(isset($_POST['clinica']) && $_POST['clinica']!=''){
 
     $dompdf->render();
 
-    $dompdf->stream('Contrato de Comodato Leve Saúde Operadora NOTEBOOK - '.$_POST['nome'].' '.$_POST['sobrenome'].'.pdf', [
+    $dompdf->stream('Contrato de Comodato NOTEBOOK - '.$_POST['nome'].' '.$_POST['sobrenome'].'.pdf', [
         'compress' => true,
         'Attachment' => false,
     ]);
@@ -237,7 +237,7 @@ $arq = '<!DOCTYPE html>
 <body>
     <h2>CONTRATO DE COMODATO</h2>
     <div class="content">
-        <p>Por este instrumento particular, as <strong>Partes</strong>, de um lado, <strong>LEVE SAÚDE OPERADORA DE PLANOS DE SAÚDE S.A.</strong>, inscrita no CNPJ sob o número 36.503.186/0001-49, com sede na Rua Engenheiro Enaldo Cravo Peixoto, n°. 215, Loja B – Tijuca, Rio de Janeiro, RJ, doravante denominada <strong>COMODANTE</strong>, e do outro '.$_POST['nome'].' '.$_POST['sobrenome'].', portador (a) do de identidade nº. '.$documento.' e CPF nº '.$_POST['cpf'].', doravante denominado (a) <strong>COMODATÁRIO (A).</strong></p>
+        <p>Por este instrumento particular, as <strong>Partes</strong>, de um lado,<strong>XXXXXXXXXXXXXXXXX LTDA.</strong>, inscrita no CNPJ sob o número YY.YYY. YYY/YYYY-ZZ, com sede na Rua Lorem ipsum dolor sit amet, n°. SSS, BRAZIL, doravante denominada <strong>COMODANTE</strong>, e do outro '.$_POST['nome'].' '.$_POST['sobrenome'].', portador (a) do de identidade nº. '.$documento.' e CPF nº '.$_POST['cpf'].', doravante denominado (a) <strong>COMODATÁRIO (A).</strong></p>
         <ul>
           <li><p>Considerando que o (a) <strong>COMODATÁRIO (A)</strong> é colaborador (a) da empresa <strong>COMODANTE;</strong></p></li>
           <li><p>Considerando que para viabilização do contrato acima referido a <strong>COMODANTE</strong> adquiriu Notebook e acessórios, resolvem celebrar o presente contrato, mediante as seguintes cláusulas e condições, que deverá ser observada e cumprida integralmente pelas partes.</p></li>
@@ -274,8 +274,8 @@ $arq = '<!DOCTYPE html>
         <p>A tolerância por parte da <strong>COMODANTE</strong> ao descumprimento das obrigações contratuais pelo (a) <strong>COMODATÁRIO(A)</strong>, não importará renúncia ou novação dos direitos e não afetará o subsequente exercício de tal direito.</p>
         <h3><strong><u>CLÁUSULA OITAVA – DO USO ESPECÍFICO PARA O EXERCÍCIO DE SUAS FUNÇÕES</u></strong></h3>
         <p>O (A) <strong>COMODATÁRIO (A)</strong> tem conhecimento que o Notebook ora cedido é para uso exclusivo no exercício de suas funções, concordando que todas as despesas relativas aos danos causados ao equipamento, decorrentes da má utilização, poderão ser cobradas em sua integralidade.</p>
-        <p>O (A) <strong>COMODATÁRIO (A)</strong> só deverá transportar o Notebook, para ambiente externo à Leve, quando demandado pelo seu gestor imediato, mediante solicitação expressa;</p>
-        <p>Nas ocasiões em que o (a) <strong>COMODATÁRIO (A)</strong> desejar transportar o Notebook, para ambiente externo à Leve, sem demanda para a Leve, assume total responsabilidade sobre o bem comodatado.</p>
+        <p>O (A) <strong>COMODATÁRIO (A)</strong> só deverá transportar o Notebook, para ambiente externo à LOREM, quando demandado pelo seu gestor imediato, mediante solicitação expressa;</p>
+        <p>Nas ocasiões em que o (a) <strong>COMODATÁRIO (A)</strong> desejar transportar o Notebook, para ambiente externo à LOREM, sem demanda para a LOREM, assume total responsabilidade sobre o bem comodatado.</p>
         <p><u>Parágrafo Único</u> – O Notebook será de uso exclusivo do (a) COMODATÁRIO (A), não devendo ceder a qualquer outra pessoa, ainda que familiar.</p>
         <h3><strong><u>CLÁUSULA NONA - DISPOSIÇÕES GERAIS</u></strong></h3>
         <p>O (A) <strong>COMODATÁRIO(A)</strong> reconhece e concorda que não se aplica o disposto no artigo 581 do Código Civil Brasileiro (L10.406/2002), tendo a <strong>COMODANTE</strong> a discricionariedade de rescindir este Contrato a qualquer momento.</p>
@@ -287,7 +287,7 @@ $arq = '<!DOCTYPE html>
         <p class="p-data">Rio de Janeiro, '.$data[8].$data[9].' de '.$meses[$data[5].$data[6]].' de '.$data[0].$data[1].$data[2].$data[3].'.</p>
     </div>
     <div class="ass">
-        <p>LEVE SAÚDE OPERADORA DE PLANOS DE SAÚDE S.A.</br>COMODANTE</p>
+        <p>LOREM IPSUM DOLOR, CONSECTETUR ADIPISCING ELIT.</br>COMODANTE</p>
     </div>
     <div class="ass">
         <p>COMODATÁRIO (A)</p>
@@ -300,7 +300,7 @@ $dompdf->loadHtml($arq);
 
 $dompdf->render();
 
-$dompdf->stream('Contrato de Comodato Leve Saúde Operadora NOTEBOOK - '.$_POST['nome'].' '.$_POST['sobrenome'].'.pdf', [
+$dompdf->stream('Contrato de Comodato NOTEBOOK - '.$_POST['nome'].' '.$_POST['sobrenome'].'.pdf', [
     'compress' => true,
     'Attachment' => false,
 ]);
