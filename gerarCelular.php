@@ -21,6 +21,14 @@ $meses=array(
 
 $tmp = sys_get_temp_dir();
 
+if(isset($_POST['sspEst']) && $_POST['sspEst']!='' && $_POST['sspEst']!='OUTROS'){
+    $tipoSSP =  $_POST['sspEst'];
+}elseif (isset($_POST['sspEst']) && $_POST['sspEst']!='' && $_POST['sspEst']=='OUTROS') {
+    $tipoSSP = '';
+}
+
+$documento = isset($tipoSSP) ? $_POST['ssp'].' '.$tipoSSP : $_POST['rg'];
+
 $dompdf = new Dompdf([
     'logOutputFile' => '',
     // authorize DomPdf to download fonts and other Internet assets
@@ -93,7 +101,7 @@ $arq = '<!DOCTYPE html>
 <body>
     <h2>CONTRATO DE COMODATO</h2>
     <div class="content">
-        <p>Por este instrumento particular, as <strong>Partes</strong>, de um lado, <strong>LEVE SAÚDE OPERADORA DE PLANOS DE SAÚDE S.A.</strong>, inscrita no CNPJ sob o número 36.503.186/0001-49, com sede na Rua Engenheiro Enaldo Cravo Peixoto, n°. 215, Loja B – Tijuca, Rio de Janeiro, RJ, doravante denominada <strong>COMODANTE</strong>, e do outro '.$_POST['nome'].' '.$_POST['sobrenome'].', portador (a) do de identidade nº. '.$_POST['rg'].' e CPF nº '.$_POST['cpf'].', doravante denominado (a) <strong>COMODATÁRIO (A).</strong></p>
+        <p>Por este instrumento particular, as <strong>Partes</strong>, de um lado, <strong>LEVE SAÚDE OPERADORA DE PLANOS DE SAÚDE S.A.</strong>, inscrita no CNPJ sob o número 36.503.186/0001-49, com sede na Rua Engenheiro Enaldo Cravo Peixoto, n°. 215, Loja B – Tijuca, Rio de Janeiro, RJ, doravante denominada <strong>COMODANTE</strong>, e do outro '.$_POST['nome'].' '.$_POST['sobrenome'].', portador (a) do de identidade nº. '.$documento.' e CPF nº '.$_POST['cpf'].', doravante denominado (a) <strong>COMODATÁRIO (A).</strong></p>
         <ul>
           <li><p>Considerando que o (a) <strong>COMODATÁRIO (A)</strong> é colaborador (a) da empresa <strong>COMODANTE;</strong></p></li>
           <li><p>Considerando que para viabilização do contrato acima referido a <strong>COMODANTE</strong> adquiriu Celular e carregador, resolvem celebrar o presente contrato, mediante as seguintes cláusulas e condições, que deverá ser observada e cumprida integralmente pelas partes.</p></li>

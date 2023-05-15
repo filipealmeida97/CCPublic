@@ -115,6 +115,20 @@
 					<label for="rg2">RG</label>
 					<input type="text" class="form-control" placeholder="11.222.333-3" name="rg" id="rg2">
 				</div>
+				<div class="form-group col-md-2">
+					<label for="ssp2">SSP</label>
+					<select class="form-control" name="sspEst" id="ssp2">
+						<option value="" selected>Escolhe o Estado oi-------</option>
+						<option value="SSP/MG">MG</option>
+						<option value="SSP/ES">ES</option>
+						<option value="OUTROS">OUTROS</option>
+					</select>
+				</div>
+				<div class="form-group col-md-2">
+					<input type="text" class="form-control" id="mg2" name="ssp" placeholder="12.345.678">
+					<input type="text" class="form-control" id="es2" name="ssp" placeholder="1.234.567">
+					<input type="text" class="form-control" id="outro2" name="ssp" placeholder="Informe o valor do documento formatado">
+				</div>
 				<div class="form-group col-md-6">
 					<label for="cpf2">CPF</label>
 					<input type="text" class="form-control" placeholder="123.456.789-00" name="cpf" id="cpf2">
@@ -221,6 +235,34 @@
 					document.getElementById("mg").setAttribute("type", "hidden");
 					document.getElementById("es").disabled = true;
 					document.getElementById("mg").disabled = true;
+				}
+			});
+			document.getElementById("es2").setAttribute("type", "hidden");
+			document.getElementById("mg2").setAttribute("type", "hidden");
+			document.getElementById("outro2").setAttribute("type", "hidden");
+			$('#ssp2').change(function(){
+				var tipo = $("#ssp2 option:selected").text();
+				if (tipo == 'MG') {
+					document.getElementById("mg2").disabled = false;
+					document.getElementById("mg2").setAttribute("type", "text");
+					document.getElementById("es2").setAttribute("type", "hidden");
+					document.getElementById("outro2").setAttribute("type", "hidden");
+					document.getElementById("es2").disabled = true;
+					document.getElementById("outro2").disabled = true;
+				}else if (tipo == 'ES') {
+					document.getElementById("es2").disabled = false;
+					document.getElementById("es2").setAttribute("type", "text");
+					document.getElementById("mg2").setAttribute("type", "hidden");
+					document.getElementById("outro2").setAttribute("type", "hidden");
+					document.getElementById("mg2").disabled = true;
+					document.getElementById("outro2").disabled = true;
+				}else if (tipo == 'OUTROS'){
+					document.getElementById("outro2").disabled = false;
+					document.getElementById("outro2").setAttribute("type", "text");
+					document.getElementById("es2").setAttribute("type", "hidden");
+					document.getElementById("mg2").setAttribute("type", "hidden");
+					document.getElementById("es2").disabled = true;
+					document.getElementById("mg2").disabled = true;
 				}
 			});
 		});
